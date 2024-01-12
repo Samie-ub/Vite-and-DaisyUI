@@ -7,3 +7,5 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.toggle("light-theme");
   });
 });
+
+AOS.init();

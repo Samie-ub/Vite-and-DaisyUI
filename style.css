@@ -17,13 +17,25 @@ body {
   color: var(--primary);
   height: 100vh;
   transition: 0.5s ease-in-out all;
+  overflow-x: hidden;
 }
 
 body.light-theme {
   --primary: #191919;
   --secondary: #ffffff;
   --ternary: #65b741;
-  background-color: var(--secondary);
+  background-color: var(--ternary);
+
+
+  main{
+    background-color: var(--ternary);
+    transition: 0.5s ease-in-out all;
+  }
+
+  header a span {
+    color: var(--primary);
+    
+  }
 }
 
 a {
@@ -38,6 +50,7 @@ header {
   align-items: center;
   position: fixed;
   width: 100%;
+  z-index: 999;
 }
 
 header a {
@@ -51,7 +64,8 @@ header a span {
 }
 
 main{
-padding-top: 5rem;
+padding-top: 10rem;
+
 }
 
 main .content {
@@ -65,4 +79,13 @@ main .content {
 main .content h1 {
   font-size: 3rem;
   font-weight: 800;
+}
+
+.card-container{
+  margin-top: 2rem;
+  padding: 5rem 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }

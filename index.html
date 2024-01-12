@@ -9,7 +9,7 @@
       rel="stylesheet"
       type="text/css"
     />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Daisy UI | Vite</title>
   </head>
   <body>
@@ -38,8 +38,11 @@
       </label>
     </header>
     <main>
-      <div class="content">
-        <h1>SLIDER EFFECT</h1>
+      <div class="content"
+     >
+     <h3>Scroll For More</h3>
+        <h1  data-aos="fade-up"
+        data-aos-anchor-placement="top-center">SLIDER EFFECT</h1>
         <div class="mockup-phone m-0">
           <div class="camera"></div>
           <div class="display">
@@ -92,8 +95,43 @@
           </div>
         </div>
       </div>
+      <div class="card-container">
+        <div class="card w-96 glass" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
+          <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="car!"/></figure>
+          <div class="card-body">
+            <h2 class="card-title">Life hack</h2>
+            <p>How to park your car at your garage?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Learn now!</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-96 glass" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
+          <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="car!"/></figure>
+          <div class="card-body">
+            <h2 class="card-title">Life hack</h2>
+            <p>How to park your car at your garage?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Learn now!</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-96 glass" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
+          <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="car!"/></figure>
+          <div class="card-body">
+            <h2 class="card-title">Life hack</h2>
+            <p>How to park your car at your garage?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Learn now!</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer></footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="/main.js"></script>
   </body>
