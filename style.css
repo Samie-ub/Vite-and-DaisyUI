@@ -4,6 +4,7 @@
   --primary: #ffffff;
   --secondary: #191919;
   --ternary: #65b741;
+  --tailwind:#1D232A;
 }
 
 * {
@@ -65,7 +66,7 @@ header a span {
 
 main{
 padding-top: 10rem;
-
+background-color: var(--tailwind);
 }
 
 main .content {
