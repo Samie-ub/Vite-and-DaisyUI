@@ -4,7 +4,7 @@
   --primary: #ffffff;
   --secondary: #191919;
   --ternary: #65b741;
-  --tailwind:#1D232A;
+  --tailwind: #1d232a;
 }
 
 * {
@@ -27,15 +27,13 @@ body.light-theme {
   --ternary: #65b741;
   background-color: var(--ternary);
 
-
-  main{
+  main {
     background-color: var(--ternary);
     transition: 0.5s ease-in-out all;
   }
 
   header a span {
     color: var(--primary);
-    
   }
 }
 
@@ -64,9 +62,17 @@ header a span {
   font-size: 1.8rem;
 }
 
-main{
-padding-top: 10rem;
-background-color: var(--tailwind);
+main {
+  padding-top: 10rem;
+  background-color: var(--tailwind);
+}
+
+.text {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  margin-top: 6rem;
+  text-align: center;
 }
 
 main .content {
@@ -82,7 +88,7 @@ main .content h1 {
   font-weight: 800;
 }
 
-.card-container{
+.card-container {
   margin-top: 2rem;
   padding: 5rem 2rem;
   display: flex;
