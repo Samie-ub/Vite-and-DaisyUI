@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+
 :root {
   --primary: #ffffff;
   --secondary: #191919;
   --ternary: #65b741;
   --tailwind: #1d232a;
+  --anton-font:'Anton', sans-serif;
 }
 
 * {
@@ -16,9 +21,7 @@ body {
   background-color: var(--secondary);
   font-family: "Poppins", sans-serif;
   color: var(--primary);
-  height: 100vh;
   transition: 0.5s ease-in-out all;
-  overflow-x: hidden;
 }
 
 body.light-theme {
@@ -65,6 +68,11 @@ header a span {
 main {
   padding-top: 10rem;
   background-color: var(--tailwind);
+  overflow: hidden;
+}
+
+.text-container{
+  width: 50%;
 }
 
 .text {
@@ -89,10 +97,59 @@ main .content h1 {
 }
 
 .card-container {
-  margin-top: 2rem;
-  padding: 5rem 2rem;
   display: flex;
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
+  padding-bottom: 2rem;
 }
+
+.scrolling-text {
+  margin-top: 2rem;
+  font-size: 5rem;
+  white-space: nowrap;
+  width: 100vw;
+  opacity: 0; 
+  transform: translateX(100%); 
+  font-family: var(--anton-font);
+  overflow-x: hidden;
+}
+.scrolling-text-two {
+  font-size: 5rem;
+  white-space: nowrap;
+  width: 100vw;
+  opacity: 0; 
+  transform: translateX(-100%); 
+  font-family: var(--anton-font);
+  overflow-x: hidden;
+}
+
+@media (max-width: 991.98px) { 
+  main .content h1{
+    font-size: 2.5rem;
+  }
+  .text-container{
+    width: 100%;
+  }
+
+  .text-container p{
+    padding: 1rem 0;
+    margin-bottom: 5rem;
+  }
+  .scrolling-text {
+    margin-top: 2rem;
+    font-size: 4rem;
+    transform: translateX(50%); 
+    width: 100vw;
+
+  }
+
+  .scrolling-text-two {
+    font-size: 4rem;
+    
+    transform: translateX(-50%); 
+
+  }
+
+ 
+ }

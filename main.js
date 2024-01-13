@@ -9,3 +9,30 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 AOS.init();
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to("#scrollingTextTwo", {
+    x: "100%",
+    opacity: 1,
+    duration: 16, 
+    scrollTrigger: {
+        trigger: "#scrollingText",
+        start: "top 80%",
+        end: "top 30%",
+        scrub: true,
+        repeat: -5,
+    }
+});
+gsap.to("#scrollingText", {
+    x: "-400%", 
+    opacity: 1,
+    duration: 16,
+    scrollTrigger: {
+        trigger: "#scrollingText",
+        start: "top 80%",
+        end: "top 30%",
+        scrub: true,
+        repeat: -5,
+    }
+});
+
